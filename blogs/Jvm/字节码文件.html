@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>字节码文件 | Krains&#39;s Blog</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/sign3.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+    <meta name="description" content="From zero to hero.">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/assets/css/0.styles.b23ada8b.css" as="style"><link rel="preload" href="/assets/js/app.6fbdab57.js" as="script"><link rel="preload" href="/assets/js/3.37c4b928.js" as="script"><link rel="preload" href="/assets/js/1.1b32cdb4.js" as="script"><link rel="preload" href="/assets/js/56.f3686724.js" as="script"><link rel="prefetch" href="/assets/js/10.c00ff10d.js"><link rel="prefetch" href="/assets/js/11.3fd62c02.js"><link rel="prefetch" href="/assets/js/12.408eeb90.js"><link rel="prefetch" href="/assets/js/13.5a9349e5.js"><link rel="prefetch" href="/assets/js/14.157f029c.js"><link rel="prefetch" href="/assets/js/15.bba8e34b.js"><link rel="prefetch" href="/assets/js/16.f61b2a7a.js"><link rel="prefetch" href="/assets/js/17.3f9b6f15.js"><link rel="prefetch" href="/assets/js/18.7e5d729c.js"><link rel="prefetch" href="/assets/js/19.24ea724e.js"><link rel="prefetch" href="/assets/js/20.bb2f96b9.js"><link rel="prefetch" href="/assets/js/21.1ce50268.js"><link rel="prefetch" href="/assets/js/22.492a860b.js"><link rel="prefetch" href="/assets/js/23.b0c307b5.js"><link rel="prefetch" href="/assets/js/24.14b390b4.js"><link rel="prefetch" href="/assets/js/25.d3a15f19.js"><link rel="prefetch" href="/assets/js/26.67dc4aa6.js"><link rel="prefetch" href="/assets/js/27.cf3ddb08.js"><link rel="prefetch" href="/assets/js/28.a4d6e2e7.js"><link rel="prefetch" href="/assets/js/29.8b458634.js"><link rel="prefetch" href="/assets/js/30.18599aae.js"><link rel="prefetch" href="/assets/js/31.29777a6f.js"><link rel="prefetch" href="/assets/js/32.dfbfe0a3.js"><link rel="prefetch" href="/assets/js/33.285f584e.js"><link rel="prefetch" href="/assets/js/34.55948402.js"><link rel="prefetch" href="/assets/js/35.85ba2161.js"><link rel="prefetch" href="/assets/js/36.37d6f307.js"><link rel="prefetch" href="/assets/js/37.09341c9c.js"><link rel="prefetch" href="/assets/js/38.f50d2f8e.js"><link rel="prefetch" href="/assets/js/39.cc1a119a.js"><link rel="prefetch" href="/assets/js/4.b7525c53.js"><link rel="prefetch" href="/assets/js/40.715190aa.js"><link rel="prefetch" href="/assets/js/41.07b63677.js"><link rel="prefetch" href="/assets/js/42.ae789756.js"><link rel="prefetch" href="/assets/js/43.96e9b19f.js"><link rel="prefetch" href="/assets/js/44.e9b3e579.js"><link rel="prefetch" href="/assets/js/45.eb29ef7b.js"><link rel="prefetch" href="/assets/js/46.9ab2a11f.js"><link rel="prefetch" href="/assets/js/47.97dafaf8.js"><link rel="prefetch" href="/assets/js/48.82b68f9f.js"><link rel="prefetch" href="/assets/js/49.dc9443b5.js"><link rel="prefetch" href="/assets/js/5.da4c9dd3.js"><link rel="prefetch" href="/assets/js/50.e78368b2.js"><link rel="prefetch" href="/assets/js/51.50634ae3.js"><link rel="prefetch" href="/assets/js/52.dbc0ea27.js"><link rel="prefetch" href="/assets/js/53.25610e1b.js"><link rel="prefetch" href="/assets/js/54.e6ef7a43.js"><link rel="prefetch" href="/assets/js/55.e458521c.js"><link rel="prefetch" href="/assets/js/57.ec5809cd.js"><link rel="prefetch" href="/assets/js/58.9193417e.js"><link rel="prefetch" href="/assets/js/59.c7e26309.js"><link rel="prefetch" href="/assets/js/6.b1fc3ed0.js"><link rel="prefetch" href="/assets/js/60.6c0b39e5.js"><link rel="prefetch" href="/assets/js/61.f46be01b.js"><link rel="prefetch" href="/assets/js/62.0a5cb08c.js"><link rel="prefetch" href="/assets/js/63.96b4933b.js"><link rel="prefetch" href="/assets/js/64.7a090243.js"><link rel="prefetch" href="/assets/js/65.9a459133.js"><link rel="prefetch" href="/assets/js/66.541944dd.js"><link rel="prefetch" href="/assets/js/67.becc373b.js"><link rel="prefetch" href="/assets/js/68.2d814830.js"><link rel="prefetch" href="/assets/js/69.a74b015d.js"><link rel="prefetch" href="/assets/js/7.c73cd78d.js"><link rel="prefetch" href="/assets/js/70.880a802a.js"><link rel="prefetch" href="/assets/js/71.41286b6e.js"><link rel="prefetch" href="/assets/js/72.be29d080.js"><link rel="prefetch" href="/assets/js/73.e343a238.js"><link rel="prefetch" href="/assets/js/74.71dd78eb.js"><link rel="prefetch" href="/assets/js/8.bc208ab9.js"><link rel="prefetch" href="/assets/js/9.a77a0112.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b23ada8b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-dad8a512><div data-v-dad8a512><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-dad8a512 data-v-dad8a512><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-dad8a512 data-v-dad8a512><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>Krains's Blog</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>Krains</span>
+            
+          <!---->
+          2020
+        </a></span></div></div> <div class="hide" data-v-dad8a512><header class="navbar" data-v-dad8a512><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/sign3.png" alt="Krains's Blog" class="logo"> <span class="site-name">Krains's Blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Algorithm/" class="nav-link"><i class="iconfont undefined"></i>
+  Algorithm
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据结构/" class="nav-link"><i class="iconfont undefined"></i>
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/categories/LeetCode题解/" class="nav-link"><i class="iconfont undefined"></i>
+  LeetCode题解
+</a></li><li class="dropdown-item"><!----> <a href="/categories/JVM/" class="nav-link"><i class="iconfont undefined"></i>
+  JVM
+</a></li><li class="dropdown-item"><!----> <a href="/categories/计算机基础知识/" class="nav-link"><i class="iconfont undefined"></i>
+  计算机基础知识
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://zhongshanhao.github.com" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-dad8a512></div> <aside class="sidebar" data-v-dad8a512><div class="personal-info-wrapper" data-v-ca798c94 data-v-dad8a512><img src="/avatar2.png" alt="author-avatar" class="personal-img" data-v-ca798c94> <h3 class="name" data-v-ca798c94>
+    Krains
+  </h3> <div class="num" data-v-ca798c94><div data-v-ca798c94><h3 data-v-ca798c94>50</h3> <h6 data-v-ca798c94>Article</h6></div> <div data-v-ca798c94><h3 data-v-ca798c94>17</h3> <h6 data-v-ca798c94>Tag</h6></div></div> <hr data-v-ca798c94></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Algorithm/" class="nav-link"><i class="iconfont undefined"></i>
+  Algorithm
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据结构/" class="nav-link"><i class="iconfont undefined"></i>
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/categories/LeetCode题解/" class="nav-link"><i class="iconfont undefined"></i>
+  LeetCode题解
+</a></li><li class="dropdown-item"><!----> <a href="/categories/JVM/" class="nav-link"><i class="iconfont undefined"></i>
+  JVM
+</a></li><li class="dropdown-item"><!----> <a href="/categories/计算机基础知识/" class="nav-link"><i class="iconfont undefined"></i>
+  计算机基础知识
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://zhongshanhao.github.com" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Jvm</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/Jvm/字节码文件.html" class="active sidebar-link">字节码文件</a></li><li><a href="/blogs/Jvm/对象实例化内存布局与访问定位.html" class="sidebar-link">对象实例化内存布局与访问定位</a></li><li><a href="/blogs/Jvm/类加载子系统.html" class="sidebar-link">类加载子系统</a></li><li><a href="/blogs/Jvm/运行时数据区.html" class="sidebar-link">运行时数据区</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-dad8a512><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>字节码文件</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>Krains</span>
+            
+          <!---->
+          2020
+        </a></span></div></div> <div data-v-dad8a512><main class="page"><div class="page-title" style="display:none;"><h1>字节码文件</h1> <hr> <div data-v-aa64b9d0><i class="iconfont reco-account" data-v-aa64b9d0><span data-v-aa64b9d0>Krains</span></i> <i class="iconfont reco-date" data-v-aa64b9d0><span data-v-aa64b9d0>2020-08-04</span></i> <i class="iconfont reco-eye" data-v-aa64b9d0><span id="/blogs/Jvm/%E5%AD%97%E8%8A%82%E7%A0%81%E6%96%87%E4%BB%B6.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-aa64b9d0><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <!----></div></div> <div class="theme-reco-content content__default" style="display:none;"><p>编写的Java代码</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MethodInnerStructTest</span> <span class="token keyword">extends</span> <span class="token class-name">Object</span> <span class="token keyword">implements</span> <span class="token class-name">Comparable</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">,</span> <span class="token class-name">Serializable</span> <span class="token punctuation">{</span>
+    <span class="token comment">// filed</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> num <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token class-name">String</span> str <span class="token operator">=</span> <span class="token string">&quot;test&quot;</span><span class="token punctuation">;</span>
+    <span class="token comment">// 默认构造器</span>
+    <span class="token comment">// 方法</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">test1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">int</span> count <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;count=&quot;</span> <span class="token operator">+</span> count<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">test2</span><span class="token punctuation">(</span><span class="token keyword">int</span> cal<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">int</span> result <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">try</span><span class="token punctuation">{</span>
+            <span class="token keyword">int</span> value <span class="token operator">=</span> <span class="token number">30</span><span class="token punctuation">;</span>
+            result <span class="token operator">=</span> value <span class="token operator">/</span> cal<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">catch</span><span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">compareTo</span><span class="token punctuation">(</span><span class="token class-name">String</span> o<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><p>反编译</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>javap -v -p MethodInnerStructTest.class
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>得到反编译的字节码文件，这些信息都会通过classloader加载到方法区当中，但在运行时方法区中还包含了加载该class文件的classloader信息，当前只是反编译，没有经过classloader。</p> <p>《深入理解Java虚拟机》书中对方法区（Method Area）存储内容描述如下：它用于存储已被虚拟机加载的类型信息、常量、静态变量、即时编译器编译后的代码缓存等。</p> <h3 id="类型信息"><a href="#类型信息" class="header-anchor">#</a> 类型信息</h3> <p>对每个加载的类型（类class、接口interface、枚举enum、注解annotation），JVM必须在方法区中存储以下类型信息：</p> <ul><li>这个类型的完整有效名称（全名=包名.类名）</li> <li>这个类型直接父类的完整有效名（对于interface或是java.lang.object，都没有父类）</li> <li>这个类型的修饰符（public，abstract，final的某个子集）</li> <li>这个类型直接接口的一个有序列表</li></ul> <h3 id="域信息"><a href="#域信息" class="header-anchor">#</a> 域信息</h3> <p>JVM必须在方法区中保存类型的所有域的相关信息以及域的声明顺序。</p> <p>域的相关信息包括：域名称、域类型、域修饰符（public，private，protected，static，final，volatile，transient的某个子集）</p> <h3 id="方法（method）信息"><a href="#方法（method）信息" class="header-anchor">#</a> 方法（Method）信息</h3> <p>JVM必须保存所有方法的以下信息，同域信息一样包括声明顺序：</p> <ul><li>方法名称</li> <li>方法的返回类型（或void）</li> <li>方法参数的数量和类型（按顺序）</li> <li>方法的修饰符（public，private，protected，static，final，synchronized，native，abstract的一个子集）</li> <li>方法的字节码（bytecodes）、操作数栈、局部变量表及大小（abstract和native方法除外）</li> <li>异常表（abstract和native方法除外）</li></ul> <blockquote><p>每个异常处理的开始位置、结束位置、代码处理在程序计数器中的偏移地址、被捕获的异常类的常量池索引</p></blockquote> <h3 id="non-final的类变量"><a href="#non-final的类变量" class="header-anchor">#</a> non-final的类变量</h3> <p>静态变量和类关联在一起，随着类的加载而加载，他们成为类数据在逻辑上的一部分</p> <p>类变量被类的所有实例共享，即使没有类实例时，你也可以访问它</p> <h3 id="全局常量"><a href="#全局常量" class="header-anchor">#</a> 全局常量</h3> <p>全局常量就是使用 static final 进行修饰</p> <p>被声明为final的类变量的处理方法则不同，每个全局常量在编译的时候就会被分配了。</p> <h3 id="常量池"><a href="#常量池" class="header-anchor">#</a> 常量池</h3> <p>常量池表（Constant Pool Table）是Class文件的一部分，用于存放编译期生成的各种字面量与符号引用，这部分内容将在类加载后存放到方法区的运行时常量池中。</p> <h3 id="运行时常量池-vs-常量池"><a href="#运行时常量池-vs-常量池" class="header-anchor">#</a> 运行时常量池 VS 常量池</h3> <p>字节码文件中含有常量池，里面有一些符号引用，clas文件加载到方法区之后，常量池就变成了运行时常量池。</p> <p>常量池表（Constant Pool Table），包括各种字面量和对类型、域和方法的符号引用</p> <p>test1方法编译后的代码指令，里边用到的<code>#</code>都是符号引用。</p> <h4 id="为什么需要常量池"><a href="#为什么需要常量池" class="header-anchor">#</a> 为什么需要常量池</h4> <p>一个java源文件中的类、接口，编译后产生一个字节码文件。而Java中的字节码需要数据支持，通常这种数据会很大以至于不能直接存到字节码里，可以换另一种方式，可以存到常量池，这个字节码包含了指向常量池的引用。</p> <p>而在运行时常量池中，就统一了所有字节码的常量池，这样也能够复用一些字面量、域、方法等信息，节省内存空间。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>         0: bipush        20
+         2: istore_1
+         3: getstatic     #3                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         6: new           #4                  // class java/lang/StringBuilder
+         9: dup
+        10: invokespecial #5                  // Method java/lang/StringBuilder.&quot;&lt;init&gt;&quot;:()V
+        13: ldc           #6                  // String count=
+        15: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        18: iload_1
+        19: invokevirtual #8                  // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+        22: invokevirtual #9                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        25: invokevirtual #10                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        28: return
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>完整的class文件</p> <div class="language-txt line-numbers-mode"><pre class="language-text"><code>Classfile /home/zsh/workplace/idea/leetcode/out/production/String/MethodInnerStructTest.class
+  Last modified 2020-8-4; size 1570 bytes
+  MD5 checksum 7bd5c5126ee7ab811c5336bcf5e8d30c
+  Compiled from &quot;MethodInnerStructTest.java&quot;
+
+  // 类型信息
+public class MethodInnerStructTest extends java.lang.Object implements java.lang.Comparable&lt;java.lang.String&gt;, java.io.Serializable
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+
+// 常量池
+Constant pool:
+   #1 = Methodref          #18.#52        // java/lang/Object.&quot;&lt;init&gt;&quot;:()V
+   #2 = Fieldref           #17.#53        // MethodInnerStructTest.num:I
+   #3 = Fieldref           #54.#55        // java/lang/System.out:Ljava/io/PrintStream;
+   #4 = Class              #56            // java/lang/StringBuilder
+   #5 = Methodref          #4.#52         // java/lang/StringBuilder.&quot;&lt;init&gt;&quot;:()V
+   #6 = String             #57            // count=
+   #7 = Methodref          #4.#58         // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #8 = Methodref          #4.#59         // java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+   #9 = Methodref          #4.#60         // java/lang/StringBuilder.toString:()Ljava/lang/String;
+  #10 = Methodref          #61.#62        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #11 = Class              #63            // java/lang/Exception
+  #12 = Methodref          #11.#64        // java/lang/Exception.printStackTrace:()V
+  #13 = Class              #65            // java/lang/String
+  #14 = Methodref          #17.#66        // MethodInnerStructTest.compareTo:(Ljava/lang/String;)I
+  #15 = String             #67            // test
+  #16 = Fieldref           #17.#68        // MethodInnerStructTest.str:Ljava/lang/String;
+  #17 = Class              #69            // MethodInnerStructTest
+  #18 = Class              #70            // java/lang/Object
+  #19 = Class              #71            // java/lang/Comparable
+  #20 = Class              #72            // java/io/Serializable
+  #21 = Utf8               num
+  #22 = Utf8               I
+  #23 = Utf8               str
+  #24 = Utf8               Ljava/lang/String;
+  #25 = Utf8               &lt;init&gt;
+  #26 = Utf8               ()V
+  #27 = Utf8               Code
+  #28 = Utf8               LineNumberTable
+  #29 = Utf8               LocalVariableTable
+  #30 = Utf8               this
+  #31 = Utf8               LMethodInnerStructTest;
+  #32 = Utf8               test1
+  #33 = Utf8               count
+  #34 = Utf8               test2
+  #35 = Utf8               (I)I
+  #36 = Utf8               value
+  #37 = Utf8               e
+  #38 = Utf8               Ljava/lang/Exception;
+  #39 = Utf8               cal
+  #40 = Utf8               result
+  #41 = Utf8               StackMapTable
+  #42 = Class              #63            // java/lang/Exception
+  #43 = Utf8               compareTo
+  #44 = Utf8               (Ljava/lang/String;)I
+  #45 = Utf8               o
+  #46 = Utf8               (Ljava/lang/Object;)I
+  #47 = Utf8               &lt;clinit&gt;
+  #48 = Utf8               Signature
+  #49 = Utf8               Ljava/lang/Object;Ljava/lang/Comparable&lt;Ljava/lang/String;&gt;;Ljava/io/Serializable;
+  #50 = Utf8               SourceFile
+  #51 = Utf8               MethodInnerStructTest.java
+  #52 = NameAndType        #25:#26        // &quot;&lt;init&gt;&quot;:()V
+  #53 = NameAndType        #21:#22        // num:I
+  #54 = Class              #73            // java/lang/System
+  #55 = NameAndType        #74:#75        // out:Ljava/io/PrintStream;
+  #56 = Utf8               java/lang/StringBuilder
+  #57 = Utf8               count=
+  #58 = NameAndType        #76:#77        // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #59 = NameAndType        #76:#78        // append:(I)Ljava/lang/StringBuilder;
+  #60 = NameAndType        #79:#80        // toString:()Ljava/lang/String;
+  #61 = Class              #81            // java/io/PrintStream
+  #62 = NameAndType        #82:#83        // println:(Ljava/lang/String;)V
+  #63 = Utf8               java/lang/Exception
+  #64 = NameAndType        #84:#26        // printStackTrace:()V
+  #65 = Utf8               java/lang/String
+  #66 = NameAndType        #43:#44        // compareTo:(Ljava/lang/String;)I
+  #67 = Utf8               test
+  #68 = NameAndType        #23:#24        // str:Ljava/lang/String;
+  #69 = Utf8               MethodInnerStructTest
+  #70 = Utf8               java/lang/Object
+  #71 = Utf8               java/lang/Comparable
+  #72 = Utf8               java/io/Serializable
+  #73 = Utf8               java/lang/System
+  #74 = Utf8               out
+  #75 = Utf8               Ljava/io/PrintStream;
+  #76 = Utf8               append
+  #77 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #78 = Utf8               (I)Ljava/lang/StringBuilder;
+  #79 = Utf8               toString
+  #80 = Utf8               ()Ljava/lang/String;
+  #81 = Utf8               java/io/PrintStream
+  #82 = Utf8               println
+  #83 = Utf8               (Ljava/lang/String;)V
+  #84 = Utf8               printStackTrace
+{
+  // 域信息/属性
+  public int num;
+    descriptor: I
+    flags: ACC_PUBLIC // 访问修饰符
+
+    // 如果是final修饰的static常量，则会在编译之后就初始化了,而不是在初始化阶段
+  private static java.lang.String str;
+    descriptor: Ljava/lang/String;
+    flags: ACC_PRIVATE, ACC_STATIC
+
+    // 默认构造器
+  public MethodInnerStructTest();
+    descriptor: ()V	// 返回值 void
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object.&quot;&lt;init&gt;&quot;:()V
+         4: aload_0
+         5: bipush        10
+         7: putfield      #2                  // Field num:I
+        10: return
+      LineNumberTable:
+        line 3: 0
+        line 5: 4
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      11     0  this   LMethodInnerStructTest;
+
+    // 方法
+  public void test1();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=3, locals=2, args_size=1
+         0: bipush        20
+         2: istore_1
+         3: getstatic     #3                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         6: new           #4                  // class java/lang/StringBuilder
+         9: dup
+        10: invokespecial #5                  // Method java/lang/StringBuilder.&quot;&lt;init&gt;&quot;:()V
+        13: ldc           #6                  // String count=
+        15: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        18: iload_1
+        19: invokevirtual #8                  // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+        22: invokevirtual #9                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        25: invokevirtual #10                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        28: return
+      LineNumberTable:
+        line 10: 0
+        line 11: 3
+        line 12: 28
+
+        // 局部变量表
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      29     0  this   LMethodInnerStructTest;
+            3      26     1 count   I
+
+  public static int test2(int);
+    descriptor: (I)I
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=3, args_size=1
+         0: iconst_0
+         1: istore_1
+         2: bipush        30
+         4: istore_2
+         5: iload_2
+         6: iload_0
+         7: idiv
+         8: istore_1
+         9: goto          17
+        12: astore_2
+        13: aload_2
+        14: invokevirtual #12                 // Method java/lang/Exception.printStackTrace:()V
+        17: iload_1
+        18: ireturn
+
+        // 异常表
+      Exception table:
+         from    to  target type
+             2     9    12   Class java/lang/Exception
+      LineNumberTable:
+        line 15: 0
+        line 17: 2
+        line 18: 5
+        line 21: 9
+        line 19: 12
+        line 20: 13
+        line 22: 17
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            5       4     2 value   I
+           13       4     2     e   Ljava/lang/Exception;
+            0      19     0   cal   I
+            2      17     1 result   I
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 12
+          locals = [ int, int ]
+          stack = [ class java/lang/Exception ]
+        frame_type = 4 /* same */
+
+  public int compareTo(java.lang.String);
+    descriptor: (Ljava/lang/String;)I
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=2, args_size=2
+         0: iconst_0
+         1: ireturn
+      LineNumberTable:
+        line 27: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       2     0  this   LMethodInnerStructTest;
+            0       2     1     o   Ljava/lang/String;
+
+  public int compareTo(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)I
+    flags: ACC_PUBLIC, ACC_BRIDGE, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: checkcast     #13                 // class java/lang/String
+         5: invokevirtual #14                 // Method compareTo:(Ljava/lang/String;)I
+         8: ireturn
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       9     0  this   LMethodInnerStructTest;
+
+    // 类加载过程中的初始化阶段的&lt;clinit&gt;
+  static {};
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: ldc           #15                 // String test
+         2: putstatic     #16                 // Field str:Ljava/lang/String;
+         5: return
+      LineNumberTable:
+        line 6: 0
+}
+Signature: #49                          // Ljava/lang/Object;Ljava/lang/Comparable&lt;Ljava/lang/String;&gt;;Ljava/io/Serializable;
+SourceFile: &quot;MethodInnerStructTest.java&quot;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br><span class="line-number">209</span><br><span class="line-number">210</span><br><span class="line-number">211</span><br><span class="line-number">212</span><br><span class="line-number">213</span><br><span class="line-number">214</span><br><span class="line-number">215</span><br><span class="line-number">216</span><br><span class="line-number">217</span><br><span class="line-number">218</span><br><span class="line-number">219</span><br><span class="line-number">220</span><br><span class="line-number">221</span><br><span class="line-number">222</span><br><span class="line-number">223</span><br><span class="line-number">224</span><br><span class="line-number">225</span><br><span class="line-number">226</span><br><span class="line-number">227</span><br><span class="line-number">228</span><br><span class="line-number">229</span><br><span class="line-number">230</span><br><span class="line-number">231</span><br><span class="line-number">232</span><br><span class="line-number">233</span><br><span class="line-number">234</span><br><span class="line-number">235</span><br><span class="line-number">236</span><br><span class="line-number">237</span><br><span class="line-number">238</span><br><span class="line-number">239</span><br><span class="line-number">240</span><br><span class="line-number">241</span><br><span class="line-number">242</span><br><span class="line-number">243</span><br><span class="line-number">244</span><br><span class="line-number">245</span><br><span class="line-number">246</span><br><span class="line-number">247</span><br></div></div></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-40a3448a><li class="level-3" data-v-40a3448a><a href="/blogs/Jvm/%E5%AD%97%E8%8A%82%E7%A0%81%E6%96%87%E4%BB%B6.html#类型信息" class="sidebar-link" data-v-40a3448a>类型信息</a></li><li class="level-3" data-v-40a3448a><a href="/blogs/Jvm/%E5%AD%97%E8%8A%82%E7%A0%81%E6%96%87%E4%BB%B6.html#域信息" class="sidebar-link" data-v-40a3448a>域信息</a></li><li class="level-3" data-v-40a3448a><a href="/blogs/Jvm/%E5%AD%97%E8%8A%82%E7%A0%81%E6%96%87%E4%BB%B6.html#方法（method）信息" class="sidebar-link" data-v-40a3448a>方法（Method）信息</a></li><li class="level-3" data-v-40a3448a><a href="/blogs/Jvm/%E5%AD%97%E8%8A%82%E7%A0%81%E6%96%87%E4%BB%B6.html#non-final的类变量" class="sidebar-link" data-v-40a3448a>non-final的类变量</a></li><li class="level-3" data-v-40a3448a><a href="/blogs/Jvm/%E5%AD%97%E8%8A%82%E7%A0%81%E6%96%87%E4%BB%B6.html#全局常量" class="sidebar-link" data-v-40a3448a>全局常量</a></li><li class="level-3" data-v-40a3448a><a href="/blogs/Jvm/%E5%AD%97%E8%8A%82%E7%A0%81%E6%96%87%E4%BB%B6.html#常量池" class="sidebar-link" data-v-40a3448a>常量池</a></li><li class="level-3" data-v-40a3448a><a href="/blogs/Jvm/%E5%AD%97%E8%8A%82%E7%A0%81%E6%96%87%E4%BB%B6.html#运行时常量池-vs-常量池" class="sidebar-link" data-v-40a3448a>运行时常量池 VS 常量池</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-44bd5a18 data-v-44bd5a18><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-44bd5a18><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-44bd5a18></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-44bd5a18></path></svg></div></div></div>
+    <script src="/assets/js/app.6fbdab57.js" defer></script><script src="/assets/js/3.37c4b928.js" defer></script><script src="/assets/js/1.1b32cdb4.js" defer></script><script src="/assets/js/56.f3686724.js" defer></script>
+  </body>
+</html>
